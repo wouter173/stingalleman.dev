@@ -1,19 +1,19 @@
 :root {
-  --thumbnail: url("./carbon.png")
-;
+  --thumbnail: url("./carbon.png");
+  --bg: linear-gradient(45deg, #241c59, #020f2b);
 }
 
 * {
   margin: 0px;
   padding: 0px;
   color: white;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(45deg, #241c59, #020f2b);
+  background-image: var(--bg);
   overflow: hidden;
 }
 
@@ -25,10 +25,15 @@ section {
   margin-right: auto;
   margin-top: 10vh;
   background: #05011f;
-  -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
   border-radius: 16pt;
   overflow: hidden;
+}
+section::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  pointer-events: none;
 }
 
 .content {
@@ -37,78 +42,72 @@ section {
   height: 96%;
   margin-top: 3%;
   margin-left: 5%;
+  overflow-y: scroll;
 }
 
 header .heading {
   display: inline-block;
 }
-
 header .heading h1 {
   margin-bottom: -0.6em;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 3em;
 }
-
 header .heading p {
   margin-top: 2em;
   margin-bottom: 4em;
 }
-
 header nav {
   float: right;
 }
-
 header nav a {
-  margin-left: 2em;
+  margin-right: 2em;
   text-decoration: none;
 }
-
 header nav a:hover {
   text-decoration: underline;
 }
 
 .vsfuckingcode {
-  position: absolute;
-  right: 0px;
-  width: 700px;
-  height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6))), var(--thumbnail);
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), var(--thumbnail);
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  min-width: 700px;
+  width: 60%;
+  float: right;
 }
 
 @media (max-width: 970px) {
   section {
     width: 96vw;
-    height: 98vh;
-    margin-top: 1vh;
+    min-height: 94vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
   }
+  section .content {
+    width: 80%;
+    margin: 10%;
+    height: auto;
+  }
+
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   header .heading {
+    width: 100%;
     font-size: 10pt;
   }
   header nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-top: 0.6em;
     text-align: right;
   }
+  header nav a {
+    margin-right: 0px;
+  }
+
   .vsfuckingcode {
-    left: 0px;
-    height: 70%;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6))), var(--thumbnail);
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), var(--thumbnail);
+    width: 100%;
+    min-width: auto;
   }
 }
+
 /*# sourceMappingURL=main.css.map */

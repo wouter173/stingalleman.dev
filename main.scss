@@ -1,6 +1,6 @@
 :root {
-	--thumbnail: url("./carbon.png")
-	--bg: linear-gradient(45deg, #241c59, #020f2b)
+	--thumbnail: url("./carbon.png");
+	--bg: linear-gradient(45deg, #241c59, #020f2b);
 }
 
 * {
@@ -9,10 +9,6 @@
 
 	color: white;
 	font-family: 'Nunito', sans-serif;
-}
-
-html {
-	background-color: black;
 }
 
 body {
@@ -38,6 +34,15 @@ section {
 	border-radius: 16pt;
 
 	overflow: hidden;
+
+	&::after {
+		content: "";
+		position: absolute;
+
+		background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+
+		pointer-events: none;
+	}
 }
 
 .content {
@@ -48,6 +53,8 @@ section {
 
 	margin-top: 3%;
 	margin-left: 5%;
+
+	overflow-y: scroll;
 }
 
 header {
@@ -72,7 +79,7 @@ header {
 		float: right;	
 
 		a {
-			margin-left: 2em;
+			margin-right: 2em;
 			text-decoration: none;
 
 			&:hover {
@@ -83,31 +90,35 @@ header {
 }
 
 .vsfuckingcode {
-	position: absolute;
-	right: 0px;
+	min-width: 700px;
+	width: 60%;
 
-	width: 700px;
-	height: 100%;
-
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), var(--thumbnail);
-	background-size: contain;
-	background-position: bottom;
-	background-repeat: no-repeat;
+	float: right;
 }
 
 @media (max-width: 970px) {
 
 	section {
 		width: 96vw;
-		height: 98vh;
+		min-height: 94vh;
 
-		margin-top: 1vh;
+		margin-top: 3vh;
+		margin-bottom: 3vh;
+
+		.content {
+			width: 80%;
+			margin: 10%;
+
+			height: auto;
+		}
 	}
 
 	header {
 		display: flex;
 
 		.heading {
+			width: 100%;
+
 			font-size: 10pt;
 		}
 
@@ -118,13 +129,15 @@ header {
 			margin-top: 0.6em;
 
 			text-align: right;
+
+			a {
+				margin-right: 0px;
+			}
 		}
 	}
 
 	.vsfuckingcode {
-		left: 0px;
-		height: 70%;
-
-		background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), var(--thumbnail);
+		width: 100%;
+		min-width: auto;
 	}
 }
