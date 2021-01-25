@@ -1,5 +1,4 @@
 :root {
-  --thumbnail: url("./carbon.png");
   --bg: linear-gradient(45deg, #241c59, #020f2b);
 }
 
@@ -143,7 +142,10 @@ header nav a:hover {
     width: 90%;
     min-width: auto;
     margin-left: 5%;
-    font-size: 6pt;
+    font-size: 8pt;
+  }
+  .vsfuckingcode pre {
+    white-space: pre-line;
   }
 }
 

@@ -1,5 +1,4 @@
 :root {
-	--thumbnail: url("./carbon.png");
 	--bg: linear-gradient(45deg, #241c59, #020f2b);
 }
 
@@ -187,6 +186,10 @@ header {
 
 		margin-left: 5%;
 
-		font-size: 6pt;
+		font-size: 8pt;
+		
+		pre {
+			white-space: pre-line;
+		}
 	}
 }
