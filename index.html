@@ -8,7 +8,10 @@
 
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&family=Nunito:wght@300;600&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="css/prism.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<script defer src="js/prism.js"></script>
 
 		<title>Sting Alleman</title>
 	</head>
@@ -31,9 +34,50 @@
 					</nav>
 				</header>
 
-				<!-- dit moet je ff in je css veranderen want ik vind <img> tag moeluk BIG UPDATE, IK KAN IMG TAG WOWWP WOOP-->
-				<!-- 	NO MORE THIS: ikheb zo'n coole css variable maar idk of dat door de scss transpiler heen komt, WOOP WOOP-->
-				<img src="carbon.png" class="vsfuckingcode" />
+				<!-- dit is yuck as shit maar we moeten dr mee leven-->
+				<div class="vsfuckingcode">
+					<div class="top">
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+					</div>
+					<pre class="line-numbers"><code class="language-js">const { Snipe } = require('snipe-it.js'); 
+const snipe = new Snipe(SNIPE_URL, API_TOKEN);
+
+async function func() {
+	const data = await snipe.hardware.get({
+		limit: 50
+	});
+	console.log(data);
+}
+
+func();
+const snipe = new Snipe(SNIPE_URL, API_TOKEN);
+
+async function func() {
+	const data = await snipe.hardware.get({
+		limit: 50
+	});
+	console.log(data);
+}
+
+func();
+
+a ++ b
+const snipe = new Snipe(SNIPE_URL, API_TOKEN);
+
+async function func() {
+	const data = await snipe.hardware.get({
+		limit: 50
+	});
+	console.log(data);
+}
+
+func();
+
+a ++ b
+a ++ b</code></pre>
+				</div>
 			</div>
 		</section>
 	</body>
