@@ -40,6 +40,7 @@ section {
 	&::after {
 		content: "";
 		position: absolute;
+		top: 0;
 
 		width: 100%;
 		height: 100%;
@@ -47,20 +48,15 @@ section {
 		background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
 
 		pointer-events: none;
-		overflow: hidden;
 	}
 }
 
 .content {
-	position: absolute;
-
 	width: 90%;
 	height: 97%;
 
 	margin-top: 3%;
 	margin-left: 5%;
-
-	// overflow-y: scroll;
 }
 
 header {
@@ -101,9 +97,9 @@ header {
 	min-width: 700px;
 	width: 60%;
 
-	max-height: 65%;
+	height: 65%;
 
-	right: 0px;
+	right: 5%;
 	bottom: 0px;
 
 	.top {
@@ -140,8 +136,8 @@ header {
 	pre {
 		margin: 0px;
 
-		height: 430px;
-		overflow: scroll;
+		max-height: calc(100% - 5em);
+		overflow: auto scroll;
 	}
 }
 
@@ -186,7 +182,11 @@ header {
 	}
 
 	.vsfuckingcode {
-		width: 100%;
+		width: 90%;
 		min-width: auto;
+
+		margin-left: 5%;
+
+		font-size: 6pt;
 	}
 }
