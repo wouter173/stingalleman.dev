@@ -137,6 +137,8 @@ header {
 
 		max-height: calc(100% - 5em);
 		overflow: auto scroll;
+		
+		white-space: pre-line;
 	}
 }
 
@@ -187,9 +189,5 @@ header {
 		margin-left: 5%;
 
 		font-size: 8pt;
-		
-		pre {
-			white-space: pre-line;
-		}
 	}
 }
