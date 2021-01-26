@@ -114,10 +114,9 @@ header nav a:hover {
 
 @media (max-width: 970px) {
   section {
-    width: 96vw;
-    min-height: 94vh;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    width: 100vw;
+    min-height: 100vh;
+    border-radius: 0px;
   }
   section .content {
     width: 80%;
@@ -147,6 +146,10 @@ header nav a:hover {
     min-width: auto;
     margin-left: 5%;
     font-size: 8pt;
+  }
+  .vsfuckingcode pre {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
   }
 }
 

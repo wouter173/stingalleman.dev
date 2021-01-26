@@ -149,11 +149,10 @@ header {
 @media (max-width: 970px) {
 
 	section {
-		width: 96vw;
-		min-height: 94vh;
+		width: 100vw;
+		min-height: 100vh;
 
-		margin-top: 3vh;
-		margin-bottom: 3vh;
+		border-radius: 0px;
 
 		.content {
 			width: 80%;
@@ -193,5 +192,10 @@ header {
 		margin-left: 5%;
 
 		font-size: 8pt;
+
+		pre {
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+		}
 	}
 }
