@@ -137,8 +137,12 @@ header {
 
 		max-height: calc(100% - 5em);
 		overflow: auto scroll;
-		
-		white-space: pre-line;
+
+		white-space: pre-wrap;
+
+		.token {
+			overflow-wrap: break-word;
+		}
 	}
 }
 
