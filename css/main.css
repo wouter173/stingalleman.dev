@@ -122,6 +122,8 @@ header nav a:hover {
     border-radius: 0px;
   }
   section .content {
+    width: 80%;
+    height: 90%;
     margin: 5% 10%;
   }
 
