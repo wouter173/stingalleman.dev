@@ -114,13 +114,14 @@ header nav a:hover {
 
 @media (max-width: 970px) {
   section {
+    top: 0px;
+    left: 0px;
+    transform: none;
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     border-radius: 0px;
   }
   section .content {
-    width: 80%;
-    height: 90%;
     margin: 5% 10%;
   }
 
