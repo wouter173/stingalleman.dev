@@ -1,0 +1,31 @@
+import { Controller, Get } from "@nestjs/common";
+import { UserInfo, UserSkills } from "@interfaces";
+
+@Controller("/user")
+export class UserController {
+  @Get("/info")
+  getUserInfo(): UserInfo {
+    return {
+      name: "Sting Alleman",
+    };
+  }
+
+  @Get("/skills")
+  getUserSkills(): UserSkills {
+    return {
+      skills: [
+        "typescript",
+		"linux",
+		"server_management",
+		"vmware esxi",
+		"virtualization",
+		"software architecture",
+		"nestjs",
+		"docker",
+		"nginx",
+		"nodejs",
+		"git",
+	  ],
+	};
+  }
+}
