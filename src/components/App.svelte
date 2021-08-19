@@ -15,7 +15,7 @@
 	})()
 </script>
 
-<section class="relative flex w-full h-full justify-center text-white bg-blue-1000 shadow-2xl z-10 sm:overflow-hidden sm:w-4/5 sm:4/5 sm:rounded-3xl">
+<section class="relative flex w-full h-full justify-center text-white shadow-2xl z-10 sm:bg-blue-1000 sm:overflow-hidden sm:w-4/5 sm:h-4/5 sm:rounded-3xl">
 	<div class="relative w-11/12 pt-14">
 		<div class="inline-block ml-4">
 			<h1 class="font-extrabold text-4xl -mb-3 sm:text-5xl">Sting</h1>

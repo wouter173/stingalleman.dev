@@ -3,7 +3,7 @@
 </script>
 
 <main class="flex w-full h-screen items-center justify-center">
-	<div class="absolute h-screen w-full bg-gradient-to-tr from-purple-950 to-blue-950"></div>
+	<div class="absolute h-screen w-full bg-gradient-to-tr from-purple-950 to-blue-950 bg-cover" style="background-image: url('/background.png')"></div>
   	<App />
 </main>
 

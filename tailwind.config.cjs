@@ -14,6 +14,9 @@ module.exports = {
 				},
 				purple: {
 					950: '#241c59'
+				},
+				blackblue: {
+					100: 'rgb(33, 32, 34)'
 				}
 			}
 		},
