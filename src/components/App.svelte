@@ -19,12 +19,12 @@
 </script>
 
 <section class="relative flex w-full h-full justify-center text-white shadow-2xl z-10 sm:bg-blue-1000 sm:overflow-hidden sm:w-4/5 sm:h-4/5 sm:rounded-3xl">
-	<div class="relative w-11/12 pt-14">
+	<div class="relative w-11/12 pt-14 2xl:pt-32">
 		<div class="inline-block ml-4">
-			<h1 class="font-extrabold text-4xl -mb-3 sm:text-5xl">Sting</h1>
-			<h1 class="font-extrabold text-4xl sm:text-5xl">Alleman</h1>
+			<h1 class="font-extrabold text-4xl -mb-3 sm:text-5xl xl:text-6xl 2xl:text-9xl">Sting</h1>
+			<h1 class="font-extrabold text-4xl sm:text-5xl xl:text-6xl 2xl:text-9xl">Alleman</h1>
 		</div>
-		<nav class="grid grid-rows-2 grid-cols-2 -mt-2 list-none float-right sm:block sm:float-none sm:ml-4 sm:mt-10">
+		<nav class="grid grid-rows-2 grid-cols-2 -mt-2 list-none float-right sm:block sm:float-none sm:ml-4 sm:mt-10 2xl:mt-20">
 			{#each socials as social}
 				<Link icon={social.icon} name={social.name} href={social.href} />
 			{/each}
