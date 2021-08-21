@@ -1,12 +1,15 @@
 <script>
+	import {faDiscord, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons'
+	import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+
 	import Link from './Link.svelte'
 	import Prism from './Prism.svelte'
 
 	const socials = [
-		{name: "Github", href: "https://github.com/stingalleman"},
-		{name: "Instagram", href: "https://instagram.com/sting.alleman"},
-		{name: "Discord", href: "https://discord.gg/SZ9Ept5CTM"},
-		{name: "Email", href: "mailto:stingalleman@icloud.com"},
+		{name: "Github", icon: faGithub, href: "https://github.com/stingalleman"},
+		{name: "Instagram", icon: faInstagram, href: "https://instagram.com/sting.alleman"},
+		{name: "Discord", icon: faDiscord, href: "https://discord.gg/SZ9Ept5CTM"},
+		{name: "Email", icon: faEnvelope, href: "mailto:stingalleman@icloud.com"},
 	]
 
 	const code = (async () => {
@@ -21,9 +24,9 @@
 			<h1 class="font-extrabold text-4xl -mb-3 sm:text-5xl">Sting</h1>
 			<h1 class="font-extrabold text-4xl sm:text-5xl">Alleman</h1>
 		</div>
-		<nav class="grid grid-cols-2 grid-rows-2 gap-2 mt-2 mr-4 float-right list-none sm:grid-cols-4 sm:grid-rows-none sm:mt-0 sm:gap-8">
+		<nav class="grid grid-rows-2 grid-cols-2 -mt-2 list-none float-right sm:block sm:float-none sm:ml-4 sm:mt-10">
 			{#each socials as social}
-				<Link name={social.name} href={social.href} />
+				<Link icon={social.icon} name={social.name} href={social.href} />
 			{/each}
 		</nav>
 
